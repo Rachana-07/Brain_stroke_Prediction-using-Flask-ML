@@ -5,8 +5,11 @@ This is a Flask-based web application that preze user input and provide predicti
 🚀 Features
 
 User-friendly Web Interface: Enter medical and lifestyle details in a simple form.
+
 Machine Learning Model: Uses a trained logistic regression model for stroke prediction.
+
 Data Preprocessing: Encodes categorical variables and scales numerical features before making predictions.
+
 Flask Backend: Handles user input, processes data, and serves the prediction.
 
 
@@ -14,15 +17,24 @@ Flask Backend: Handles user input, processes data, and serves the prediction.
 
 
 📁 Brain_Stroke_Prediction
-│── app.py                   # Flask application
+│── app.py        # Flask application
+
 │── model.joblib             # Pre-trained machine learning model
+
 │── templates/               # HTML templates for web UI
+
 │   ├── index.html           # Input form page
+
 │   ├── result.html          # Prediction result page
+
 │── static/                  # CSS, JS, and images (if needed)
+
 │── train.csv                # Dataset used for training
+
 │── test.csv                 # Dataset used for testing
+
 │── Stroke Prediction.ipynb  # Jupyter Notebook with model training
+
 │── README.md                # Project documentation
 
 
@@ -52,28 +64,9 @@ Smoking Status
 Clone the repository:
 
 
-git clone https://github.com/your-repo/Brain_Stroke_Prediction.git
+git clone https://github.com/Rachana-07/Brain_stroke_Prediction-using-Flask-ML.git
 cd Brain_Stroke_Prediction
 
-
-
-
-
-Create and activate a virtual environment:
-
-
-python -m venv venv
-source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate     # On Windows
-
-
-
-
-
-Install dependencies:
-
-
-pip install -r requirements.txt
 
 
 
@@ -97,7 +90,7 @@ The application will start at http://127.0.0.1:5000/
 Open http://127.0.0.1:5000/ in your browser.
 Enter details like age, medical history, and lifestyle factors.
 Click "Predict" to get the result.
-The system will display "At Risk" or "Not at Risk" based on the prediction.
+The system will display "Detected" or "Not Detected" based on the prediction.
 
 
 🤖 Model Details
